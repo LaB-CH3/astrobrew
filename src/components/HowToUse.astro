@@ -1,0 +1,89 @@
+---
+import Showcase from '../assets/img/trends.svg'
+
+---
+
+
+<section class="product-defined">
+    <div class="container">
+         <div class="row product-brief-items">
+            <div class="brief-tab one-half column">
+                <h3 class="h2-title">Connections that spark growth and engagement</h3>
+                <p class="m-paragraph m-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                <ol class="row">
+                    <li class="one-third column"><a href="#">Install extention</a></li>
+                    <li class="one-third column"><a href="#">Use any search filter</a></li>
+                    <li class="one-third column"><a href="#">Automate everything</a></li>
+                </ol>
+            </div>
+            <div class="brief-media center one-half column">
+                <img src={Showcase} class="md-width" alt="Showcase mockup">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style lang="scss">
+@import '../assets/sass/_base.scss';
+
+.product-defined{
+    background-color: #ecf7f8;
+  
+    .brief-media{
+      height: 340px;
+      position: relative;
+      overflow: hidden;
+      img{
+        border-radius: 15px;
+      }
+    }
+    .brief-tab{
+        padding-top: 50px;
+    }
+    ol{
+        counter-reset: step;
+        align-items: center;
+        list-style: none;
+        >li{
+            padding-left: 40px;
+            position: relative;
+            &::before{
+                counter-increment: step;
+                content: counter(step);
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: -13px;
+                text-align: center;
+                font-size: 13px;
+                line-height: 1.8em;
+                border: 2px solid #000;
+                font-weight: 700;
+                border-radius: $radius;
+            }
+            a{
+                text-decoration: none;
+                color: #000;
+            }
+        }
+        @media (max-width:700px) {
+            gap: 10px;
+            .column{
+                width: 33%;
+                padding-left: 30px;
+                &::before{
+                    width: 18px;
+                    height: 18px;
+                    font-size: 10px;
+                }
+                a{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+  }
+</style>

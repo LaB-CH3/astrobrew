@@ -1,0 +1,58 @@
+---
+import Logo from '../assets/img/logodark.svg'
+---
+
+
+<header>
+    <nav class="container">
+        <div class="nav-logo">
+            <a href="https://anthonycharles.work">
+                <img src={Logo} alt="brand logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#">Twitter</a>
+        </div>
+        <div class="nav-cta">
+            <a href="#">Login</a>
+            <a href="#" class="button button-primary">free Trial</a>
+        </div>
+    </nav>
+</header>
+
+
+<style lang="scss">
+nav{
+    position: relative;
+    display: grid;
+    grid-template-columns: 12% 57% 30%;
+    top: 10px;
+    .nav-cta{
+       text-align: right;
+    }
+    .nav-links{
+        margin-top:2px;
+    }
+    a:not(.button){
+        padding: 0 10px;
+        color: #333;
+        text-decoration: none;
+        img{
+            width: 100px;
+            margin-left: -6px;
+        }
+    }
+
+    @media (max-width:700px) {
+        grid-template-columns: 30% 70%;
+        .nav-logo img{
+            margin-top: 5px;
+        }
+        .nav-links{
+            display: none;
+        }
+    }
+}
+</style>

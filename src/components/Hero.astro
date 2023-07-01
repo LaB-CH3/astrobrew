@@ -1,0 +1,78 @@
+---
+import Showcase from '../assets/img/tweet.svg'
+import Google from '../assets/img/place08.svg'
+import OpenAI from '../assets/img/place09.svg'
+import Amazon from '../assets/img/place06.svg'
+import Nike from '../assets/img/place07.svg'
+import Bing from '../assets/img/place11.svg'
+import Pintrest from '../assets/img/place01.svg'
+---
+
+
+<section class="product-hero">
+    <div class="container">
+       <div class="row">
+           <div class="one-half column">
+              <div class="d-cell">
+               <h1 class="h1-title">The simple yet powerful alternative to <span>Zendesk.</span></h1>
+               <div class="content">
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente itaque minima aliquid ea earum similique dolore magni, nam adipisci </p>
+                   <a href="#" class="button button-primary">Start your free trial</a>
+               </div>
+              </div>
+           </div>
+           <div class="one-half column hero-media">
+               <img src={Showcase} alt="Hero illustrator">
+           </div>
+       </div>
+
+       <div class="m-margin">
+           <p>Over 2,000 people chooses Astrobrew</p>
+           <div class="brands">
+               <div class="row">
+                   <img src={Google} class="two columns" alt="Google logo">
+                   <img src={OpenAI} class="two columns" alt="Open AI logo">
+                   <img src={Amazon} class="two columns" alt="Amazon logo">
+                   <img src={Nike} class="two columns" alt="Nike logo">
+                   <img src={Bing} class="two columns" alt="Bing logo">
+                   <img src={Pintrest} class="two columns" alt="Pintrest logo">
+               </div>
+           </div>
+       </div>
+    </div>
+   </section>
+
+   <style lang="scss">
+    @import '../assets/sass/_base.scss';
+
+    .product-hero{
+        padding: 50px 0;
+        .h1-title span{
+            background-color: $brand-color;
+            padding: 3px 10px;
+            color: #fff;
+        }
+        .one-half{
+            display: table;
+            height: 400px;
+            margin-bottom: 40px;
+            .d-cell{
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    .hero-media{
+        img{
+            width: 100%;
+        }
+    }
+    @media (max-width:700px) {
+        .brands .row{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+        
+    }
+    }
+   </style>

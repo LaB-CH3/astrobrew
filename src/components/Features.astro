@@ -1,0 +1,58 @@
+---
+import FeatureOne from '../assets/img/feature_one.svg'
+import FeatureTwo from '../assets/img/feature_two.svg'
+import FeatureThree from '../assets/img/feature_three.svg'
+---
+
+
+
+<section class="solutions" id="features">
+    <div class="container">
+        <div class="center text-container">
+            <h2 class="h2-title">Export leads from Twitter</h2>
+            <p>Lorem ipsum dolor sit amet consectetur labore beatae equi ipsum vitae suscipit tenetur, soluta eligendi. Molestiae corrupti eius aliquam in.</p>
+        </div> 
+        <br>
+        <div class="row">
+            <div class="sol-wrap one-third column">
+                <div class="sol-media m-margin">
+                    <img src={FeatureOne} alt="Prospect">
+                </div>
+                <h3 class="m-subtitle">Prospect</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit ullam maxime veritatis,  possimus.</p>
+                <a href="#" class="button">start trial</a>
+            </div>
+            <div class="sol-wrap one-third column">
+                <div class="sol-media m-margin">
+                    <img src={FeatureTwo} alt="Marketing">
+                </div>
+                <h3 class="m-subtitle">Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit ullam maxime veritatis,  possimus.</p>
+                <a href="#" class="button">start trial</a>
+            </div>
+            <div class="sol-wrap one-third column">
+                <div class="sol-media  m-margin">
+                    <img src={FeatureThree} alt="Automation">
+                </div>
+                <h3 class="m-subtitle">Automation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit ullam maxime veritatis,  possimus.</p>
+                <a href="#" class="button">start trial</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style lang="scss">
+    .solutions{
+    img{
+        width: 100px;
+    }
+    @media (max-width:700px) {
+        text-align: center;
+        .sol-wrap{
+            padding: 30px;
+        }
+    }
+}
+</style>

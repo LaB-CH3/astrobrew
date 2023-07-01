@@ -14,23 +14,70 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+        <meta name="description" content="Astrobrew is a free and open-source elegant landing page for Micro SaaS products built with Astro & Skeleton CSS"/>
 		<title>{title}</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
+<style lang="scss" is:global>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+@import '../assets/sass/_base.scss';
+
+
+
+body, html{
+    font-family: 'Poppins', sans-serif;
+    background-color:  #fff;
+    scroll-behavior: smooth;
+}
+
+.block{
+    display: block;
+}
+.h1-title, .h2-title{
+    font-weight: 700;
+}
+.h1-title{
+    font-size: 4.2rem;
+}
+.h2-title{
+    font-size: 3rem;
+}
+.m-subtitle{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.m-margin{
+    margin-bottom: 2rem;
+}
+
+.md-width{
+   width: 300px;
+}
+.text-container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.button{
+    border-radius: 40px !important;
+    &.button-primary{
+        background-color: $brand-color !important;
+        border-color: $brand-color !important;
+    }
+}
+.flex{
+    display: flex;
+}
+
+section{
+    padding: 70px 0;
+}
 </style>
