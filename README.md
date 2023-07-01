@@ -15,7 +15,12 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── Features.astro
+        └── FinalCta.astro
+        └── Footer.astro
+        └── Header.astro
+        └── Hero.astro
+        └── HowToUse.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
