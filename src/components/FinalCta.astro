@@ -1,10 +1,85 @@
-<section class="fine-section" id="pricing">
-    <div class="container">
-        <div class="center text-container">
-            <h2 class="h2-title">Stop wasting time & start automating your feed</h2>
-            <p>The complete toolkit to turn one-time browsers into long-term customers. No matter how many twitter accounts you install Astrobrew on, <strong>$95/month total</strong> is all you'll have to pay</p>
+---
+import Few from '../assets/few.svg'
+---
 
-            <button class="button button-primary">7-day free trial</button>
+<section class="fine-section padded" id="customers">
+    <div class="container">
+
+        <div class="arrow-image">
+            <img src={Few}>
         </div>
+
+        <div class="testimony">
+            <div class="flex">
+                <div class="customer-pic">
+                    <div class="circular-image">
+                        <img src="https://images.pexels.com/photos/3756985/pexels-photo-3756985.jpeg?auto=compress&cs=tinysrgb&w=800">
+                    </div>
+                </div>
+                <div class="customer-testimony">
+                    <h4 class="h3-title">"I’ve been a happy Astrobrew customer since 2018. Then and now, Plutio has helped me keep my projects organized and effortless. My clients love it too - they feel more important and involved than ever before."</h4>
+                    <p>Claire Rick, Lead Developer @Slack</p>
+                </div>
+            </div>
+        </div>
+
+
+      
     </div>
 </section> 
+
+<style lang="scss">
+
+
+.fine-section{
+    background-color: var(--accent);
+    .container{
+        position: relative;
+    }
+}
+.testimony{
+    background-color: var(--accent);
+    padding: 60px 20px 20px  20px;
+    border-radius: 20px;
+}
+.customer-testimony{
+    width: 70%;
+    h4, p{
+        color: #fff;
+    }
+}
+
+.customer-pic{
+    width: 30%;
+}
+
+.circular-image {
+    width: 240px;
+    height: 240px;
+    display: inline-block;
+    position: absolute;
+    img{
+        width: 100%;
+        border-radius: 20px;
+        transform: translateY(-45px) rotate(-4deg);
+    }
+ }
+
+ .arrow-image{
+    position: absolute;
+    top: -200px;
+    img{
+        width: 200px;
+    }
+ }
+
+ @media (max-width:700px) {
+    .flex{
+        flex-direction: column;
+        .circular-image{
+            position: relative;
+        }
+    }
+ }
+
+</style>

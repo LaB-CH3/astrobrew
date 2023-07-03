@@ -1,14 +1,14 @@
 ---
-import Showcase from '../assets/img/trends.svg'
+import Showcase from '../assets/showcase-two.svg'
 
 ---
 
 
-<section class="product-defined">
+<section class="product-defined padded">
     <div class="container">
          <div class="row product-brief-items">
             <div class="brief-tab one-half column">
-                <h3 class="h2-title">Connections that spark growth and engagement</h3>
+                <h3 class="h1-title">Spark growth and engagement</h3>
                 <p class="m-paragraph m-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                 <ol class="row">
                     <li class="one-third column"><a href="#">Install extention</a></li>
@@ -17,7 +17,7 @@ import Showcase from '../assets/img/trends.svg'
                 </ol>
             </div>
             <div class="brief-media center one-half column">
-                <img src={Showcase} class="md-width" alt="Showcase mockup">
+                <img src={Showcase} alt="Showcase mockup">
             </div>
         </div>
     </div>
@@ -25,17 +25,12 @@ import Showcase from '../assets/img/trends.svg'
 
 
 <style lang="scss">
-@import '../assets/sass/_base.scss';
 
-.product-defined{
-    background-color: #ecf7f8;
-  
-    .brief-media{
-      height: 340px;
-      position: relative;
-      overflow: hidden;
-      img{
-        border-radius: 15px;
+.product-defined{  
+    .brief-media img{
+      width: 400px;
+      @media (max-width:700px) {
+        width: 300px;
       }
     }
     .brief-tab{
@@ -62,7 +57,7 @@ import Showcase from '../assets/img/trends.svg'
                 line-height: 1.8em;
                 border: 2px solid #000;
                 font-weight: 700;
-                border-radius: $radius;
+                border-radius: 8px;
             }
             a{
                 text-decoration: none;

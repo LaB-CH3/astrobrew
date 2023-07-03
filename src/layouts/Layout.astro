@@ -24,16 +24,19 @@ const { title } = Astro.props;
 </html>
 <style lang="scss" is:global>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
-@import '../assets/sass/_base.scss';
 
 
+:root{
+    --accent: #CA555D;
+    --tenary: #8574EB;
+}
 
 body, html{
     font-family: 'Poppins', sans-serif;
-    background-color:  #fff;
     scroll-behavior: smooth;
+    margin: 0px;
+    overflow-x: hidden;
 }
-
 .block{
     display: block;
 }
@@ -46,17 +49,10 @@ body, html{
 .h2-title{
     font-size: 3rem;
 }
-.m-subtitle{
-    font-size: 2rem;
-    font-weight: 500;
-}
-.m-margin{
-    margin-bottom: 2rem;
+.h3-title{
+    font-size: 2.5rem;
 }
 
-.md-width{
-   width: 300px;
-}
 .text-container{
     max-width: 500px;
     margin: 0 auto;
@@ -67,17 +63,23 @@ body, html{
 }
 
 .button{
-    border-radius: 40px !important;
+    border-radius: 40px;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 1.4rem;
     &.button-primary{
-        background-color: $brand-color !important;
-        border-color: $brand-color !important;
+        background-color: var(--accent);
+        border-color: var(--accent);
+    }
+    &.lg{
+        height: 50px;
+        line-height: 48px;
     }
 }
 .flex{
     display: flex;
 }
-
-section{
+section.padded{
     padding: 70px 0;
 }
 </style>

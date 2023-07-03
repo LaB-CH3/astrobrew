@@ -4,6 +4,6 @@ Skeleton CSS: http://getskeleton.com/
 
 Logos: https://logoipsum.com/
 
-Other Vectors: https://www.figma.com/file/aneTOz44v8XOpZq8ERTpCx/Tiny-Dribbble-shots-constructor-(Community)?type=design&mode=design&t=DHNio9bkcacvBTo0-1
+3D Vectors: https://www.figma.com/file/J1JH96aLA7BH5ZhnVOwqJn/Nikuu-3d-Illustration-Pack-by-Paperpillar-(Community)?type=design&node-id=0%3A1&mode=design&t=BeChE1usiIPzpjGN-1
 
 Fonts (Poppins, sans-serif): https://fonts.google.com/

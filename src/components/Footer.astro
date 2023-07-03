@@ -1,63 +1,40 @@
 ---
-import LinkedIn from '../assets/img/linkedin.svg'
-import Twitter from '../assets/img/twitter.svg'
+import Start from '../assets/start.svg'
 ---
 
 <footer>
-    <div class="container row">
-        <div class="footer-link flex js one-half column">
-            <a href="#">About</a> <a href="#">Help Center</a>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a> 
-        </div>
-        <div class="footer-note one-half column">
-            <div class="u-pull-right">
-                <div class="flex">
-                    <p>© Astrobrew automation</p>
-                    <a href="#"><img src={Twitter} alt="Twitter icon"></a>
-                    <a href="#"><img src={LinkedIn} alt="Linkedin icon"></a>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+      <div class="flex">
+        <a href="#">Help</a>
+        <a href="#">FAQ</a>
+        <a href="#">Privacy</a> <a href="#">Discord</a>
+      </div>
+      <div class="center">
+        <a href="#">
+          <img src={Start} alt="">
+        </a>
+      </div>
     </div>
 </footer>
 
 <style lang="scss">
-footer{
-    padding: 40px 0;
-    background-color: #fff;
-    border-top: 1px solid #eee;
 
-    a, p{
-      color: #222;
-      font-size: 1.3rem;
-    }
-    .footer-link a{
-      padding-right: 10px;
-    }
-    .container{
-      padding: 30px;
-      border-radius: 50px;
-      
-      .footer-note{
-        a{
-          padding-left: 10px;
-          img{
-            width: 20px;
-          }
-        }
-      }
-    }
-    @media (max-width:700px) {
-        .flex{
-            justify-content: center;
-        }
-        .column{
-            padding: 10px 0;
-        }
-        .u-pull-right{
-            float: none;
-        }
-    }
+footer{
+  padding: 50px;
+}
+
+.flex{
+  justify-content: center;
+  padding: 50px 10px;
+  a{
+    padding: 20px;
+    color: #111;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+}
+
+img{
+    width: 200px;
   }
 </style>
