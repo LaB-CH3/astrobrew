@@ -2,7 +2,6 @@
 
 Astrobrew is a free and open-source elegant landing page for Micro SaaS products built with Astro & Skeleton CSS
 
-
 ![basics](./src/demo/landing.png)
 
 ## 🚀 Project Structure
