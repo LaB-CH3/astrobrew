@@ -47,6 +47,7 @@ All commands are run from the root of the project, from a terminal:
 
 
 
+
 ## 👀 Curious to Explore More?
 
 Check out [LAB-CH3](https://github.com/LaB-CH3) for a growing collection of current and future templates.
