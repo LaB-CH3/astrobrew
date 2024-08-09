@@ -1,5 +1,5 @@
 ---
-import Logo from '../assets/logodark.svg'
+import Logo from '../assets/logo-dark.svg'
 ---
 
 
@@ -28,17 +28,19 @@ nav{
     position: relative;
     display: grid;
     grid-template-columns: 12% 55% 30%;
-    top: 10px;
+    top: 20px;
+    align-items: center;
     .nav-cta{
        text-align: right;
     }
     .nav-links{
-        margin-top:2px;
+        margin-top: -2px;
     }
     a:not(.button){
         padding: 0 10px;
         color: #333;
         text-decoration: none;
+        font-weight: 500;
         img{
             width: 90px;
             margin-left: -6px;
@@ -46,7 +48,7 @@ nav{
         }
     }
 
-    @media (max-width:700px) {
+    @media (max-width:900px) {
         grid-template-columns: 30% 70%;
         .nav-logo img{
             margin-top: 7px;
