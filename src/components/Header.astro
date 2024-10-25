@@ -13,7 +13,10 @@ import Logo from '../assets/logo-dark.svg'
         <div class="nav-links">
             <a href="#features">Features</a>
             <a href="#customers">Customers</a>
-            <a href="#">Twitter</a>
+            <a href="https://astrobrewpro.netlify.app/" target="_blank">
+                <span>Pro version</span>
+                <span class="pulse tag">New</span>
+            </a>
         </div>
         <div class="nav-cta">
             <a href="#">Login</a>
@@ -57,5 +60,22 @@ nav{
             display: none;
         }
     }
+}
+
+
+.pulse{
+    animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite;
+}
+@keyframes pulse {
+   50% { opacity: .7; }
+}
+
+.tag{
+    background-color: var(--tenary);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 </style>

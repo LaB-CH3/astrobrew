@@ -2,7 +2,12 @@
 
 Astrobrew is a free and open-source elegant landing page for Micro SaaS products built with Astro & Skeleton CSS
 
-![basics](./src/demo/landing-02.png)
+### Live demo
+(https://gentle-liger-f28974.netlify.app/)
+
+### Upgrade to Astrobrew Pro version
+(https://astrobrewpro.netlify.app/)
+
 
 ## 🚀 Project Structure
 
@@ -27,9 +32,9 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Preview
+![basics](./src/demo/brew-thumbnail.png)
 
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
@@ -41,10 +46,10 @@ All commands are run from the root of the project, from a terminal:
 | `npm run dev`             | Starts local dev server at `localhost:3000`      |
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
 
+## Score
+![basics](./src/demo/score.png)
 
 
 
@@ -53,4 +58,4 @@ All commands are run from the root of the project, from a terminal:
 Check out [LAB-CH3](https://github.com/LaB-CH3) for a growing collection of current and future templates.
 
 If you’ve found this helpful, consider fueling my creativity!  
-[![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/d2OuR1c)
+[![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/d2OuR1c)
