@@ -4,37 +4,74 @@ import FeatureTwo from "../assets/object-two.svg";
 import FeatureThree from "../assets/object-three.svg";
 ---
 
-<section class="solutions" id="features">
-  <div class="container">
-    <div class="row">
-      <div class="sol-wrap one-third column">
-        <div class="sol-media m-margin">
-          <img src={FeatureOne.src} alt="Sistemas Modulares" />
+<section
+  class="solutions bg-green-900 rounded-3xl md:rounded-full p-8 sm:p-10 mx-4 sm:mx-10"
+  id="features"
+>
+  <div class="container mx-auto">
+    <div class="row flex flex-wrap justify-between">
+      <div class="sol-wrap one-third column w-full md:w-1/3 p-4 md:p-5">
+        <div
+          class="sol-media m-margin flex justify-center md:justify-start mb-6"
+        >
+          <img
+            src={FeatureOne.src}
+            alt="Sistemas Modulares"
+            class="w-32 md:w-36"
+          />
         </div>
-        <h3 class="h3-title">Sistemas Modulares</h3>
-        <p>
+        <h3
+          class="h3-title text-white text-lg sm:text-xl font-medium text-left mb-2 md:mb-4"
+        >
+          Sistemas Modulares
+        </h3>
+        <p class="text-white text-left text-2xl font-light">
           Nuestros sistemas hidropónicos modulares impresos en 3D se adaptan a
           cualquier espacio, permitiendo a los usuarios personalizar sus
           instalaciones de acuerdo a sus necesidades.
         </p>
       </div>
-      <div class="sol-wrap one-third column">
-        <div class="sol-media m-margin">
-          <img src={FeatureTwo.src} alt="Sostenibilidad y Reciclaje" />
+
+      <div class="sol-wrap one-third column w-full md:w-1/3 p-4 md:p-5">
+        <div
+          class="sol-media m-margin flex justify-center md:justify-start mb-6"
+        >
+          <img
+            src={FeatureTwo.src}
+            alt="Sostenibilidad y Reciclaje"
+            class="w-32 md:w-36"
+          />
         </div>
-        <h3 class="h3-title">Sostenibilidad y Reciclaje</h3>
-        <p>
+        <h3
+          class="h3-title text-white text-lg sm:text-xl text-pretty font-medium text-left mb-2 md:mb-4 leading-10"
+        >
+          Sostenibilidad y Reciclaje
+        </h3>
+        <p class="text-white text-left text-2xl font-light">
           Fabricamos cada pieza a partir de materiales reciclados, promoviendo
           un modelo de economía circular que reduce el impacto ambiental y apoya
           la sostenibilidad.
         </p>
       </div>
-      <div class="sol-wrap one-third column">
-        <div class="sol-media m-margin">
-          <img src={FeatureThree.src} alt="Automatización Inteligente" />
+
+      <div
+        class="sol-wrap one-third column w-full md:w-1/3 p-4 md:p-5 leading-10"
+      >
+        <div
+          class="sol-media m-margin flex justify-center md:justify-start mb-6"
+        >
+          <img
+            src={FeatureThree.src}
+            alt="Automatización Inteligente"
+            class="w-32 md:w-36"
+          />
         </div>
-        <h3 class="h3-title">Automatización Inteligente</h3>
-        <p>
+        <h3
+          class="h3-title text-white text-lg sm:text-xl font-medium text-left mb-2 md:mb-4 leading-10"
+        >
+          Automatización Inteligente
+        </h3>
+        <p class="text-white text-left text-2xl font-light">
           Integramos sensores y dispositivos IoT para monitorear y optimizar el
           ambiente de cultivo, asegurando eficiencia y control en cada sistema
           hidropónico.
@@ -43,26 +80,3 @@ import FeatureThree from "../assets/object-three.svg";
     </div>
   </div>
 </section>
-
-<style lang="scss">
-  .solutions {
-    .container {
-      background-color: var(--tenary);
-      border-radius: 40px;
-      padding: 40px;
-    }
-    h3,
-    p {
-      color: #fff;
-    }
-    img {
-      width: 150px;
-    }
-    @media (max-width: 700px) {
-      text-align: center;
-      .sol-wrap {
-        padding: 20px;
-      }
-    }
-  }
-</style>
