@@ -1,94 +1,54 @@
----
-import Showcase from "../assets/showcase-two.svg";
----
-
-<section class="product-defined padded">
-  <div class="container">
-    <div class="row product-brief-items">
-      <div class="brief-tab one-half column">
-        <h3 class="h1-title">Cultiva de forma sostenible y natural</h3>
-        <p class="m-paragraph m-margin">
-          Con Greenprint, cultiva alimentos frescos y sin químicos dañinos.
-          Nuestro sistema elimina la necesidad de agrotóxicos y fertilizantes
-          artificiales, permitiéndote disfrutar de alimentos más saludables y
-          ecológicos. Impulsa un estilo de vida más limpio, reduciendo el
-          impacto ambiental y cuidando de tu salud.
-        </p>
-        <ol class="row">
-          <li class="one-third column">
-            <a href="#">Fácil de instalar y mantener</a>
-          </li>
-          <li class="one-third column">
-            <a href="#">Alimentos más frescos y saludables</a>
-          </li>
-          <li class="one-third column">
-            <a href="#">Reducción del impacto ambiental</a>
-          </li>
-        </ol>
-      </div>
-      <div class="brief-media center one-half column">
-        <img src={Showcase.src} alt="Greenprint showcase" />
-      </div>
+<section class="bg-gray-50 py-20 flex items-center justify-center">
+  <div class="container mx-auto px-4">
+    <div class="max-w-7xl mx-auto text-center">
+      <!-- Texto de descripción centrado -->
+      <h3 class="text-5xl sm:text-6xl font-bold text-gray-900 mb-8">
+        Cultiva de forma sostenible y natural
+      </h3>
+      <p
+        class="text-gray-700 text-xl sm:text-3xl leading-relaxed mb-10 hover:text-green-600"
+      >
+        Con Greenprint, cultiva alimentos frescos y sin químicos dañinos.
+        Nuestro sistema elimina la necesidad de agrotóxicos y fertilizantes
+        artificiales, permitiéndote disfrutar de alimentos más saludables y
+        ecológicos. Impulsa un estilo de vida más limpio, reduciendo el impacto
+        ambiental y cuidando de tu salud.
+      </p>
+      <ol
+        class="flex flex-col sm:flex-row sm:justify-center gap-6 text-gray-900 list-none pl-0"
+      >
+        <li class="flex items-center pl-10 mb-4 sm:mb-0 relative">
+          <span
+            class="absolute left-0 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white text-lg font-bold border border-gray-900 rounded-md"
+            >1</span
+          >
+          <p
+            class="text-gray-900 text-lg sm:text-xl leading-relaxed ml-12 hover:text-green-600"
+          >
+            Fácil de instalar y mantener
+          </p>
+        </li>
+        <li class="flex items-center pl-10 mb-4 sm:mb-0 relative">
+          <span
+            class="absolute left-0 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white text-lg font-bold border border-gray-900 rounded-md"
+            >2</span
+          >
+          <p
+            class="text-gray-900 text-lg sm:text-xl leading-relaxed ml-12 hover:text-green-600"
+          >
+            Alimentos más frescos y saludables
+          </p>
+        </li>
+        <li class="flex items-center pl-10 relative">
+          <span
+            class="absolute left-0 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white text-lg font-bold border border-gray-900 rounded-md"
+            >3</span
+          >
+          <p class="text-gray-900 text-lg sm:text-xl leading-relaxed ml-12">
+            Reducción del impacto ambiental
+          </p>
+        </li>
+      </ol>
     </div>
   </div>
 </section>
-
-<style lang="scss">
-  .product-defined {
-    .brief-media img {
-      width: 400px;
-      @media (max-width: 700px) {
-        width: 300px;
-      }
-    }
-    .brief-tab {
-      padding-top: 50px;
-    }
-    ol {
-      counter-reset: step;
-      align-items: center;
-      list-style: none;
-      > li {
-        padding-left: 40px;
-        position: relative;
-        &::before {
-          counter-increment: step;
-          content: counter(step);
-          width: 26px;
-          height: 26px;
-          position: absolute;
-          left: 0;
-          top: 50%;
-          margin-top: -13px;
-          text-align: center;
-          font-size: 13px;
-          line-height: 1.8em;
-          border: 2px solid #000;
-          font-weight: 700;
-          border-radius: 8px;
-        }
-        a {
-          text-decoration: none;
-          color: #000;
-        }
-      }
-      @media (max-width: 900px) {
-        gap: 0px;
-        flex-direction: column;
-        .column {
-          width: 100%;
-          padding-left: 30px;
-          margin-left: 0;
-          &::before {
-            width: 18px;
-            height: 18px;
-            font-size: 10px;
-          }
-          a {
-            font-size: 1.3rem;
-          }
-        }
-      }
-    }
-  }
-</style>
