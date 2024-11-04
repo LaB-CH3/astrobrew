@@ -1,84 +1,39 @@
---- 
-import Logo from "../assets/logo-dark.svg"; 
---- 
+<header>
+  <nav
+    class="container flex flex-col md:flex-row items-center justify-between gap-4 py-5"
+  >
+    <!-- Logo -->
+    <div class="flex-1 text-center md:text-left">
+      <a href="https://anthonycharles.work">
+        <h1 class="text-3xl md:text-4xl hover:text-green-500">GREENPRINT</h1>
+      </a>
+    </div>
 
-<header> 
-  <nav class="container align-items text-center justify-center flex"> 
-    <div class="nav-logo"> 
-      <a href="https://anthonycharles.work"> 
-        <img src={Logo.src} alt="brand logo" /> 
-      </a> 
-    </div> 
-    <div class="nav-links"> 
-      <a href="#features">Características</a> 
-      <a href="#customers">Clientes</a> 
-      <a href="https://astrobrewpro.netlify.app/" target="_blank"> 
-        <span>Tienda Virtual</span> 
-        <span class="pulse tag">New</span> 
-      </a> 
-    </div> 
-  </nav> 
-</header> 
+    <!-- Enlaces de navegación -->
+    <div class="flex flex-col md:flex-row items-center gap-4 mt-4 md:mt-0">
+      <a href="#features" class="text-gray-700">Características</a>
+      <a href="#customers" class="text-gray-700">Clientes</a>
+      <a
+        href="https://astrobrewpro.netlify.app/"
+        target="_blank"
+        class="text-gray-700 flex items-center"
+      >
+        <span>Tienda Virtual</span>
+        <span
+          class="bg-green-400 text-white px-2 py-1 rounded-full text-sm font-medium animate-pulse text-lg ml-2"
+          >New</span
+        >
+      </a>
+    </div>
 
-<style lang="scss"> 
-  nav { 
-    position: relative; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 2rem; // Espacio entre los elementos
-    padding-top: 20px;
-
-    .nav-logo { 
-      flex: 1; 
-      text-align: left; 
-    } 
-
-    .nav-links { 
-      flex: 2; 
-      display: flex; 
-      justify-content: center; 
-      gap: 2rem; 
-    }
-
-    a:not(.button) { 
-      padding: 0 10px; 
-      color: #333; 
-      text-decoration: none; 
-      font-weight: 500; 
-    } 
-
-    .nav-logo img { 
-      width: 90px; 
-      margin-left: -6px; 
-      margin-top: 2px; 
-    } 
-
-    @media (max-width: 900px) { 
-      .nav-logo img { 
-        margin-top: 7px; 
-      } 
-      .nav-links { 
-        display: none; 
-      } 
-    } 
-  } 
-
-  .pulse { 
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; 
-  } 
-  @keyframes pulse { 
-    50% { 
-      opacity: 0.7; 
-    } 
-  } 
-
-  .tag { 
-    background-color: var(--tenary); 
-    color: #fff; 
-    padding: 5px 10px; 
-    border-radius: 20px; 
-    font-size: 1.2rem; 
-    font-weight: 500; 
-  } 
-</style>
+    <!-- Botón de contacto -->
+    <div class="flex-1 text-center md:text-right mt-4 md:mt-0">
+      <a
+        href="https://wa.me/+541123924098?text=Hola!%20Tengo%20una%20consulta%20sobre:"
+        class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg font-medium"
+      >
+        Contacto
+      </a>
+    </div>
+  </nav>
+</header>

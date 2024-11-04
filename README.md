@@ -1,61 +1,25 @@
-# Astrobrew
+# Greenprint - Landing Page 🌱
 
-Astrobrew is a free and open-source elegant landing page for Micro SaaS products built with Astro & Skeleton CSS
+**Greenprint** es una startup enfocada en soluciones agrícolas sostenibles e innovadoras, especializada en productos hidropónicos impresos en 3D con materiales reciclados. Nuestro objetivo es ofrecer alternativas accesibles y personalizables para la agricultura urbana y rural, promoviendo un impacto positivo en el medio ambiente y alineándonos con los Objetivos de Desarrollo Sostenible (ODS).
 
-### Live demo
-(https://gentle-liger-f28974.netlify.app/)
+Esta landing page ha sido diseñada para presentar nuestra misión, productos y servicios, destacando nuestro compromiso con la sostenibilidad y la economía circular.
 
-### Upgrade to Astrobrew Pro version
-(https://astrobrewpro.netlify.app/)
+## 🌍 ¿Qué es Greenprint?
 
+Greenprint desarrolla y comercializa productos y sistemas agrícolas que utilizan tecnologías avanzadas como impresión 3D y automatización. Al reciclar plásticos para producir nuestros propios materiales de impresión, nos posicionamos como una solución integral para empresas agrícolas, clientes domésticos y comunidades interesadas en la agricultura hidropónica y sostenible.
 
-## 🚀 Project Structure
+Nuestros productos y servicios incluyen:
+- **Sistemas hidropónicos modulares** y kits de cultivo para espacios de cualquier tamaño.
+- **Soluciones personalizadas** para clientes a gran escala, con asesoramiento en diseño, instalación y mantenimiento de sistemas.
+- **Capacitación y asesoría técnica** para maximizar el uso y rendimiento de nuestros productos.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠️ Tecnologías Utilizadas
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Features.astro
-        └── FinalCta.astro
-        └── Footer.astro
-        └── Header.astro
-        └── Hero.astro
-        └── HowToUse.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Esta landing page está desarrollada con las siguientes tecnologías:
 
-## Preview
-![basics](./src/demo/brew-thumbnail.png)
+- **Astro**: Framework estático de frontend que permite la optimización del rendimiento y una experiencia de usuario fluida.
+- **Tailwind CSS**: Framework de CSS para diseño rápido y responsivo, que garantiza una estética moderna y adaptable en múltiples dispositivos.
 
+---
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-
-
-## Score
-![basics](./src/demo/score.png)
-
-
-
-## 👀 Curious to Explore More?
-
-Check out [LAB-CH3](https://github.com/LaB-CH3) for a growing collection of current and future templates.
-
-If you’ve found this helpful, consider fueling my creativity!  
-[![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/d2OuR1c)
+**Greenprint - Cultivando un futuro verde, una impresión a la vez.**
