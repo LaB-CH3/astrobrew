@@ -1,93 +1,82 @@
 ---
-import Few from '../assets/few.svg'
+import Few from "../assets/few.svg";
+
+const testimonials = [
+    {
+        image:
+            "https://images.pexels.com/photos/3756985/pexels-photo-3756985.jpeg?auto=compress&cs=tinysrgb&w=800",
+        quote:
+            "Greenprint ha revolucionado nuestra producción. Con sus sistemas hidropónicos, hemos reducido el uso de agua y eliminado los químicos. La frescura y calidad de los cultivos son inigualables.",
+        name: "Roberto Méndez, Gerente de Producción @EcoFarms",
+    },
+    {
+        image:
+            "https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&w=800",
+        quote:
+            "Gracias a Greenprint puedo cultivar en mi apartamento. Ahora disfruto de alimentos frescos y sin pesticidas, y me encanta ser parte de un modelo sostenible.",
+        name: "Laura Gómez, Cliente Urbana",
+    },
+    {
+        image:
+            "https://images.pexels.com/photos/4022534/pexels-photo-4022534.jpeg?auto=compress&cs=tinysrgb&w=800",
+        quote:
+            "Implementamos Greenprint en nuestra empresa y ha sido un éxito. Los clientes valoran el enfoque sin químicos y nuestro equipo se ha adaptado rápidamente al sistema.",
+        name: "María Villanueva, CEO @UrbanHarvest Co.",
+    },
+    {
+        image:
+            "https://images.pexels.com/photos/1542252/pexels-photo-1542252.jpeg?auto=compress&cs=tinysrgb&w=800",
+        quote:
+            "Los sistemas de Greenprint nos permitieron expandir nuestra granja vertical sin gastar en pesticidas o fertilizantes. Ahora, nuestros cultivos son 100% naturales.",
+        name: "Ignacio Ruiz, Fundador @VerdeCity",
+    },
+];
 ---
 
-<section class="fine-section padded" id="customers">
-    <div class="container">
+<style>
+    :root {
+        --accent: #CA555D;
+        --tenary: #8574EB;
+    }
 
-        <div class="arrow-image">
-            <img src={Few.src}>
+    .customer-image:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out; /* Agrega esta línea para la transición suave */
+    }
+
+    .customer-image {
+        transition: transform 0.3s ease-in-out; /* Agrega esta línea para la transición suave al quitar el hover */
+    }
+</style>
+
+<section id="customers" class="bg-[var(--accent)] py-16">
+    <div class="container mx-auto px-4 relative">
+        <!-- Imagen decorativa -->
+        <div class="absolute -top-48 left-1/2 transform -translate-x-1/2">
+            <img src={Few.src} alt="Arrow" class="w-48" />
         </div>
 
-        <div class="testimony">
-            <div class="flex">
-                <div class="customer-pic">
-                    <div class="circular-image">
-                        <img src="https://images.pexels.com/photos/3756985/pexels-photo-3756985.jpeg?auto=compress&cs=tinysrgb&w=800">
+        <!-- Testimonios -->
+        <div class="space-y-16">
+            {testimonials.map((testimonial) => (
+                <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
+                    <!-- Imagen del cliente -->
+                    <div class="relative w-60 h-60 flex-shrink-0">
+                        <img
+                            src={testimonial.image}
+                            alt="Customer"
+                            class="w-full h-full object-cover rounded-2xl customer-image"
+                        />
+                    </div>
+                    <!-- Testimonio -->
+                    <div class="mt-8 md:mt-0 text-white md:w-2/3">
+                        <h4 class="text-2xl md:text-3xl font-semibold mb-4 text-white">
+                            "{testimonial.quote}"
+                        </h4>
+                        <p class="text-xl text-white">{testimonial.name}</p>
                     </div>
                 </div>
-                <div class="customer-testimony">
-                    <h4 class="h3-title">"I’ve been a happy Astrobrew customer since 2018. Then and now, Plutio has helped me keep my projects organized and effortless. My clients love it too - they feel more important and involved than ever before."</h4>
-                    <p>Claire Rick, Lead Developer @Slack</p>
-                </div>
-            </div>
+            ))}
         </div>
-
-
-      
     </div>
-</section> 
-
-<style lang="scss">
-
-
-.fine-section{
-    background-color: var(--accent);
-    .container{
-        position: relative;
-    }
-}
-.testimony{
-    background-color: var(--accent);
-    padding: 60px 20px 20px  20px;
-    border-radius: 20px;
-}
-.customer-testimony{
-    width: 70%;
-    h4, p{
-        color: #fff;
-    }
-}
-
-.customer-pic{
-    width: 30%;
-}
-
-.circular-image {
-    width: 240px;
-    height: 240px;
-    display: inline-block;
-    position: absolute;
-    img{
-        width: 100%;
-        border-radius: 20px;
-        transform: translateY(-45px) rotate(-4deg);
-    }
- }
-
- .arrow-image{
-    position: absolute;
-    top: -200px;
-    img{
-        width: 200px;
-    }
- }
-
- @media (max-width:900px) {
-    .flex{
-        flex-direction: column;
-        .circular-image{
-            position: relative;
-        }
-        .customer-testimony{
-            width: 100%;
-        }
-    }
-    .fine-section{
-        margin-top: 70px;
-    }
- }
-
-
-
-</style>
+</section>

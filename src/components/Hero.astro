@@ -1,50 +1,27 @@
 ---
-import Showcase from '../assets/tweet.svg'
-import Cursor from '../assets/cursor.svg'
+import Showcase from "../assets/tweet.svg";
+import Cursor from "../assets/cursor.svg";
 ---
 
-
-<section class="product-hero">
-    <div class="container">
-       <div class="row">
-           <div class="one-half column">
-              <div class="d-cell">
-               <h1 class="h1-title">The simple yet powerful alternative to <span>Zendesk.</span></h1>
-               <div class="content">
-                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente itaque minima aliquid ea earum similique dolore magni, nam adipisci </p>
-                   <a href="https://github.com/LaB-CH3/astrobrew" class="button button-primary lg">Download for free</a>
-               </div>
-              </div>
-           </div>
-           <div class="one-half column hero-media">
-               <img src={Showcase.src} class="u-full-width" alt="Hero illustrator">
-               <img src={Cursor.src} alt="Cursor icon">
-           </div>
-       </div>
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col lg:flex-row items-center gap-8">
+      <div class="lg:w-1/2 flex items-center h-96">
+        <div>
+          <h1 class="text-4xl font-bold leading-snug text-gray-900">
+            La solución sostenible e innovadora en
+            <span class="text-green-600">agricultura hidropónica.</span>
+          </h1>
+          <p class="mt-6 text-lg text-gray-700">
+            Transformamos el cultivo hidropónico con productos impresos en 3D y
+            materiales reciclados, ofreciendo una opción accesible y ecológica
+            para el futuro de la agricultura.
+          </p>
+        </div>
+      </div>
+      <div class="lg:w-1/2 relative flex items-center justify-center h-96">
+        <img src={Showcase.src} class="w-full h-80" alt="Hero illustrator" />
+      </div>
     </div>
-   </section>
-
-   <style lang="scss">
-
-    .product-hero{
-        padding: 70px 0;
-        .one-half{
-            display: table;
-            height: 400px;
-            margin-bottom: 40px;
-            .d-cell{
-                display: table-cell;
-                vertical-align: middle;
-            }
-        }
-    .hero-media{
-        position: relative;
-        img:not(.u-full-width){
-            width: 80px;
-            position: absolute;
-            left: 20px;
-            bottom: 0;
-        }
-      }
-    }
-   </style>
+  </div>
+</section>

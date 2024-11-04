@@ -1,86 +1,94 @@
 ---
-import Showcase from '../assets/showcase-two.svg'
-
+import Showcase from "../assets/showcase-two.svg";
 ---
 
-
 <section class="product-defined padded">
-    <div class="container">
-         <div class="row product-brief-items">
-            <div class="brief-tab one-half column">
-                <h3 class="h1-title">Spark growth and engagement</h3>
-                <p class="m-paragraph m-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                <ol class="row">
-                    <li class="one-third column"><a href="#">Install extention</a></li>
-                    <li class="one-third column"><a href="#">Use any search filter</a></li>
-                    <li class="one-third column"><a href="#">Automate everything</a></li>
-                </ol>
-            </div>
-            <div class="brief-media center one-half column">
-                <img src={Showcase.src} alt="Showcase mockup">
-            </div>
-        </div>
+  <div class="container">
+    <div class="row product-brief-items">
+      <div class="brief-tab one-half column">
+        <h3 class="h1-title">Cultiva de forma sostenible y natural</h3>
+        <p class="m-paragraph m-margin">
+          Con Greenprint, cultiva alimentos frescos y sin químicos dañinos.
+          Nuestro sistema elimina la necesidad de agrotóxicos y fertilizantes
+          artificiales, permitiéndote disfrutar de alimentos más saludables y
+          ecológicos. Impulsa un estilo de vida más limpio, reduciendo el
+          impacto ambiental y cuidando de tu salud.
+        </p>
+        <ol class="row">
+          <li class="one-third column">
+            <a href="#">Fácil de instalar y mantener</a>
+          </li>
+          <li class="one-third column">
+            <a href="#">Alimentos más frescos y saludables</a>
+          </li>
+          <li class="one-third column">
+            <a href="#">Reducción del impacto ambiental</a>
+          </li>
+        </ol>
+      </div>
+      <div class="brief-media center one-half column">
+        <img src={Showcase.src} alt="Greenprint showcase" />
+      </div>
     </div>
+  </div>
 </section>
 
-
 <style lang="scss">
-
-.product-defined{  
-    .brief-media img{
+  .product-defined {
+    .brief-media img {
       width: 400px;
-      @media (max-width:700px) {
+      @media (max-width: 700px) {
         width: 300px;
       }
     }
-    .brief-tab{
-        padding-top: 50px;
+    .brief-tab {
+      padding-top: 50px;
     }
-    ol{
-        counter-reset: step;
-        align-items: center;
-        list-style: none;
-        >li{
-            padding-left: 40px;
-            position: relative;
-            &::before{
-                counter-increment: step;
-                content: counter(step);
-                width: 26px;
-                height: 26px;
-                position: absolute;
-                left: 0;
-                top: 50%;
-                margin-top: -13px;
-                text-align: center;
-                font-size: 13px;
-                line-height: 1.8em;
-                border: 2px solid #000;
-                font-weight: 700;
-                border-radius: 8px;
-            }
-            a{
-                text-decoration: none;
-                color: #000;
-            }
+    ol {
+      counter-reset: step;
+      align-items: center;
+      list-style: none;
+      > li {
+        padding-left: 40px;
+        position: relative;
+        &::before {
+          counter-increment: step;
+          content: counter(step);
+          width: 26px;
+          height: 26px;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          margin-top: -13px;
+          text-align: center;
+          font-size: 13px;
+          line-height: 1.8em;
+          border: 2px solid #000;
+          font-weight: 700;
+          border-radius: 8px;
         }
-        @media (max-width:900px) {
-            gap: 0px;
-            flex-direction: column;
-            .column{
-                width: 100%;
-                padding-left: 30px;
-                margin-left: 0;
-                &::before{
-                    width: 18px;
-                    height: 18px;
-                    font-size: 10px;
-                }
-                a{
-                    font-size: 1.3rem;
-                }
-            }
+        a {
+          text-decoration: none;
+          color: #000;
         }
+      }
+      @media (max-width: 900px) {
+        gap: 0px;
+        flex-direction: column;
+        .column {
+          width: 100%;
+          padding-left: 30px;
+          margin-left: 0;
+          &::before {
+            width: 18px;
+            height: 18px;
+            font-size: 10px;
+          }
+          a {
+            font-size: 1.3rem;
+          }
+        }
+      }
     }
   }
 </style>

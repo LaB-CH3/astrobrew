@@ -1,59 +1,68 @@
 ---
-import FeatureOne from '../assets/object-one.svg'
-import FeatureTwo from '../assets/object-two.svg'
-import FeatureThree from '../assets/object-three.svg'
+import FeatureOne from "../assets/object-one.svg";
+import FeatureTwo from "../assets/object-two.svg";
+import FeatureThree from "../assets/object-three.svg";
 ---
 
-
-
 <section class="solutions" id="features">
-    <div class="container">
-      
-        <div class="row">
-            <div class="sol-wrap one-third column">
-                <div class="sol-media m-margin">
-                    <img src={FeatureOne.src} alt="Prospect">
-                </div>
-                <h3 class="h3-title">Prospect</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit ullam maxime veritatis,  possimus.</p>
-            </div>
-            <div class="sol-wrap one-third column">
-                <div class="sol-media m-margin">
-                    <img src={FeatureTwo.src} alt="Marketing">
-                </div>
-                <h3 class="h3-title">Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit ullam maxime veritatis,  possimus.</p>
-            </div>
-            <div class="sol-wrap one-third column">
-                <div class="sol-media  m-margin">
-                    <img src={FeatureThree.src} alt="Automation">
-                </div>
-                <h3 class="h3-title">Automation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit ullam maxime veritatis,  possimus.</p>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="sol-wrap one-third column">
+        <div class="sol-media m-margin">
+          <img src={FeatureOne.src} alt="Sistemas Modulares" />
         </div>
+        <h3 class="h3-title">Sistemas Modulares</h3>
+        <p>
+          Nuestros sistemas hidropónicos modulares impresos en 3D se adaptan a
+          cualquier espacio, permitiendo a los usuarios personalizar sus
+          instalaciones de acuerdo a sus necesidades.
+        </p>
+      </div>
+      <div class="sol-wrap one-third column">
+        <div class="sol-media m-margin">
+          <img src={FeatureTwo.src} alt="Sostenibilidad y Reciclaje" />
+        </div>
+        <h3 class="h3-title">Sostenibilidad y Reciclaje</h3>
+        <p>
+          Fabricamos cada pieza a partir de materiales reciclados, promoviendo
+          un modelo de economía circular que reduce el impacto ambiental y apoya
+          la sostenibilidad.
+        </p>
+      </div>
+      <div class="sol-wrap one-third column">
+        <div class="sol-media m-margin">
+          <img src={FeatureThree.src} alt="Automatización Inteligente" />
+        </div>
+        <h3 class="h3-title">Automatización Inteligente</h3>
+        <p>
+          Integramos sensores y dispositivos IoT para monitorear y optimizar el
+          ambiente de cultivo, asegurando eficiencia y control en cada sistema
+          hidropónico.
+        </p>
+      </div>
     </div>
+  </div>
 </section>
 
-
 <style lang="scss">
-    .solutions{
-        .container{
-            background-color: var(--tenary);
-            border-radius: 40px;
-            padding: 40px;
-        }
-        h3, p{
-            color: #fff;
-        }
-        img{
-            width: 150px;
-        }
-    @media (max-width:700px) {
-        text-align: center;
-        .sol-wrap{
-            padding: 20px;
-        }
+  .solutions {
+    .container {
+      background-color: var(--tenary);
+      border-radius: 40px;
+      padding: 40px;
     }
-}
+    h3,
+    p {
+      color: #fff;
+    }
+    img {
+      width: 150px;
+    }
+    @media (max-width: 700px) {
+      text-align: center;
+      .sol-wrap {
+        padding: 20px;
+      }
+    }
+  }
 </style>
