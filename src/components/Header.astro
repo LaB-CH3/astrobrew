@@ -1,81 +1,84 @@
----
-import Logo from '../assets/logo-dark.svg'
----
+--- 
+import Logo from "../assets/logo-dark.svg"; 
+--- 
 
+<header> 
+  <nav class="container align-items text-center justify-center flex"> 
+    <div class="nav-logo"> 
+      <a href="https://anthonycharles.work"> 
+        <img src={Logo.src} alt="brand logo" /> 
+      </a> 
+    </div> 
+    <div class="nav-links"> 
+      <a href="#features">Características</a> 
+      <a href="#customers">Clientes</a> 
+      <a href="https://astrobrewpro.netlify.app/" target="_blank"> 
+        <span>Tienda Virtual</span> 
+        <span class="pulse tag">New</span> 
+      </a> 
+    </div> 
+  </nav> 
+</header> 
 
-<header>
-    <nav class="container">
-        <div class="nav-logo">
-            <a href="https://anthonycharles.work">
-                <img src={Logo} alt="brand logo">
-            </a>
-        </div>
-        <div class="nav-links">
-            <a href="#features">Features</a>
-            <a href="#customers">Customers</a>
-            <a href="https://astrobrewpro.netlify.app/" target="_blank">
-                <span>Pro version</span>
-                <span class="pulse tag">New</span>
-            </a>
-        </div>
-        <div class="nav-cta">
-            <a href="#">Login</a>
-            <a href="https://github.com/LaB-CH3/astrobrew" class="button button-primary">Free trial</a>
-        </div>
-    </nav>
-</header>
+<style lang="scss"> 
+  nav { 
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 2rem; // Espacio entre los elementos
+    padding-top: 20px;
 
+    .nav-logo { 
+      flex: 1; 
+      text-align: left; 
+    } 
 
-<style lang="scss">
-nav{
-    position: relative;
-    display: grid;
-    grid-template-columns: 12% 55% 30%;
-    top: 20px;
-    align-items: center;
-    .nav-cta{
-       text-align: right;
-    }
-    .nav-links{
-        margin-top: -2px;
-    }
-    a:not(.button){
-        padding: 0 10px;
-        color: #333;
-        text-decoration: none;
-        font-weight: 500;
-        img{
-            width: 90px;
-            margin-left: -6px;
-            margin-top: 2px;
-        }
+    .nav-links { 
+      flex: 2; 
+      display: flex; 
+      justify-content: center; 
+      gap: 2rem; 
     }
 
-    @media (max-width:900px) {
-        grid-template-columns: 30% 70%;
-        .nav-logo img{
-            margin-top: 7px;
-        }
-        .nav-links{
-            display: none;
-        }
-    }
-}
+    a:not(.button) { 
+      padding: 0 10px; 
+      color: #333; 
+      text-decoration: none; 
+      font-weight: 500; 
+    } 
 
+    .nav-logo img { 
+      width: 90px; 
+      margin-left: -6px; 
+      margin-top: 2px; 
+    } 
 
-.pulse{
-    animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite;
-}
-@keyframes pulse {
-   50% { opacity: .7; }
-}
+    @media (max-width: 900px) { 
+      .nav-logo img { 
+        margin-top: 7px; 
+      } 
+      .nav-links { 
+        display: none; 
+      } 
+    } 
+  } 
 
-.tag{
-    background-color: var(--tenary);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
+  .pulse { 
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; 
+  } 
+  @keyframes pulse { 
+    50% { 
+      opacity: 0.7; 
+    } 
+  } 
+
+  .tag { 
+    background-color: var(--tenary); 
+    color: #fff; 
+    padding: 5px 10px; 
+    border-radius: 20px; 
+    font-size: 1.2rem; 
+    font-weight: 500; 
+  } 
 </style>
