@@ -1,5 +1,7 @@
 ---
 import Showcase from "../assets/tweet.svg";
+import { Icon } from "astro-icon/components";
+import Gallery from "./Gallery.astro";
 ---
 
 <section class="bg-gray-50 py-20 sm:py-40">
@@ -8,24 +10,40 @@ import Showcase from "../assets/tweet.svg";
       <!-- Texto con ajuste responsivo -->
       <div class="lg:w-1/2 flex items-center h-auto lg:h-96">
         <div>
-          <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold leading-snug text-gray-900">
-            La solución sostenible e innovadora en 
+          <h1
+            class="text-3xl sm:text-4xl lg:text-6xl font-bold leading-snug text-gray-900"
+          >
+            La solución sostenible e innovadora en
             <span class="text-green-600">agricultura hidropónica.</span>
           </h1>
           <p class="mt-4 sm:mt-6 text-lg sm:text-xl lg:text-3xl text-gray-700">
-            Transformamos el cultivo hidropónico con productos impresos en 3D y materiales reciclados, 
-            ofreciendo una opción accesible y ecológica para el futuro de la agricultura.
+            Transformamos el cultivo hidropónico con productos impresos en 3D y
+            materiales reciclados, ofreciendo una opción accesible y ecológica
+            para el futuro de la agricultura.
           </p>
-          <a
-            class="bg-green-600 text-white text-lg sm:text-2xl lg:text-4xl rounded-full py-3 px-6 sm:py-4 sm:px-8 inline-block mt-4 sm:mt-6"
-            >Visitar tienda</a
-          >
+          <div class="hover:scale-105 transition-transform">
+            <a
+              class="flex items-center justify-center gap-2 py-6 bg-green-600 text-white text-xl sm:text-3xl lg:text-4xl rounded-full px-8 sm:py-5 sm:px-10 mt-4 sm:mt-6 hover:text-white"
+            >
+              Visitar tienda
+              <Icon name="shop" class="w-6 h-6 sm:w-8 sm:h-8" />
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- Imagen con ajuste responsivo -->
-      <div class="lg:w-1/2 relative flex items-center justify-center h-64 sm:h-80 lg:h-96">
-        <img src={Showcase.src} class="w-full h-full max-w-xs sm:max-w-md lg:max-w-full" alt="Hero illustrator" />
+      <div
+        class="lg:w-1/2 relative flex items-center justify-center h-64 sm:h-80 lg:h-[28rem]"
+      >
+        <!-- <img
+          src={"/images/hydroponic.jpg"}
+          width="1920"
+          height="1080"
+          class="w-full h-full min-w-[280px] sm:min-w-[320px] max-w-xs sm:max-w-md lg:max-w-full object-cover rounded-3xl"
+          alt="Hero illustrator"
+        /> -->
+        <Gallery />
       </div>
     </div>
   </div>
