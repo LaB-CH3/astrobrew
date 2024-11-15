@@ -3,10 +3,10 @@
 Astrobrew is a free and open-source elegant landing page for Micro SaaS products built with Astro & Skeleton CSS
 
 ### Live demo
-(https://gentle-liger-f28974.netlify.app/)
+(https://brew.indiebold.com/)
 
 ### Upgrade to Astrobrew Pro version
-(https://astrobrewpro.netlify.app/)
+(https://brewpro.indiebold.com/)
 
 
 ## 🚀 Project Structure
