@@ -1,24 +1,27 @@
 ---
-import Showcase from '../assets/showcase-two.svg'
-
+import Showcase from '../assets/hiw.svg'
+const features = ['Find your tutor', 'Choose your subject', 'Start learning']
 ---
 
 
-<section class="product-defined padded">
+<section class="product-defined">
     <div class="container">
          <div class="row product-brief-items">
-            <div class="brief-tab one-half column">
-                <h3 class="h1-title">Spark growth and engagement</h3>
-                <p class="m-paragraph m-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                <ol class="row">
-                    <li class="one-third column"><a href="#">Install extention</a></li>
-                    <li class="one-third column"><a href="#">Use any search filter</a></li>
-                    <li class="one-third column"><a href="#">Automate everything</a></li>
-                </ol>
-            </div>
             <div class="brief-media center one-half column">
                 <img src={Showcase} alt="Showcase mockup">
             </div>
+            <div class="brief-tab one-half column">
+                <h3 class="h1-title">Spark growth and engagement</h3>
+                <p class="m-paragraph m-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                <ol class="ro">
+                    {features.map((el, index) => (
+                        <li><span>{index + 1}</span> <span>{el}</span></li>
+                    ))}
+                </ol>
+                <br>
+                <a href="https://github.com/LaB-CH3/astrobrew" class="button button-primary lg">Register for free</a>
+            </div>
+           
         </div>
     </div>
 </section>
@@ -26,61 +29,48 @@ import Showcase from '../assets/showcase-two.svg'
 
 <style lang="scss">
 
-.product-defined{  
+
+
+.product-defined{ 
+    padding: 120px 20px; 
     .brief-media img{
-      width: 400px;
-      @media (max-width:700px) {
-        width: 300px;
-      }
+      width: 100%;
+     
     }
-    .brief-tab{
-        padding-top: 50px;
+    .product-brief-items{
+        display: flex;
+        align-items: center;
     }
+   
     ol{
         counter-reset: step;
         align-items: center;
         list-style: none;
         >li{
-            padding-left: 40px;
             position: relative;
-            &::before{
-                counter-increment: step;
-                content: counter(step);
-                width: 26px;
-                height: 26px;
-                position: absolute;
-                left: 0;
-                top: 50%;
-                margin-top: -13px;
-                text-align: center;
-                font-size: 13px;
-                line-height: 1.8em;
-                border: 2px solid #000;
-                font-weight: 700;
-                border-radius: 8px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            span:first-child{
+                border: 2px solid #121117;
+                height: 20px;
+                width: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
             }
-            a{
-                text-decoration: none;
-                color: #000;
-            }
+          
+           
         }
-        @media (max-width:900px) {
-            gap: 0px;
-            flex-direction: column;
-            .column{
-                width: 100%;
-                padding-left: 30px;
-                margin-left: 0;
-                &::before{
-                    width: 18px;
-                    height: 18px;
-                    font-size: 10px;
-                }
-                a{
-                    font-size: 1.3rem;
-                }
-            }
+    }
+
+    @media (max-width: 700px) {
+        .product-brief-items{
+            flex-direction: column-reverse;
+            gap: 30px;
         }
+        
     }
   }
 </style>

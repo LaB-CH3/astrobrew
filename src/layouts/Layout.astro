@@ -23,25 +23,25 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style lang="scss" is:global>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
 :root{
     --accent: #CA555D;
     --tenary: #8574EB;
+    --font-family: "Ubuntu", sans-serif;
 }
 
 body, html{
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
     scroll-behavior: smooth;
     margin: 0px;
-    overflow-x: hidden;
 }
 .block{
     display: block;
 }
 .h1-title, .h2-title{
-    font-weight: 700;
+    font-weight: 500;
 }
 .h1-title{
     font-size: 4.2rem;
@@ -62,17 +62,20 @@ body, html{
     text-align: center;
 }
 
+@mixin btnPrimary{
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
 .button{
     border-radius: 40px;
     text-transform: none;
     font-weight: 500;
     font-size: 1.4rem;
     &.button-primary{
-        background-color: var(--accent);
-        border-color: var(--accent);
-        &:hover{
-            background-color: var(--accent);
-            border-color: var(--accent);
+        @include btnPrimary;
+        &:hover, &:focus, &:active{
+            @include btnPrimary;
         }
     }
     &.lg{
