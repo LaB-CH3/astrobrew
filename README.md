@@ -1,5 +1,8 @@
-# Astrobrew
+## Preview
+![basics](./src/demo/brew-thumbnail.png)
 
+
+## About
 Astrobrew is a free and open-source elegant landing page for Micro SaaS products built with Astro & Skeleton CSS
 
 ### Live demo
@@ -32,8 +35,8 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-## Preview
-![basics](./src/demo/brew-thumbnail.png)
+## Score
+![basics](./src/demo/score.png)
 
 
 ## 🧞 Commands
@@ -48,8 +51,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 
 
-## Score
-![basics](./src/demo/score.png)
+
 
 
 
